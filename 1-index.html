@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript">
+            $( document ).ready(function(){
+      $( "div" ).click(function(){ // задаем функцию при нажатии на элемент button
+        $( "input" ).keypress(); // вызываем событие keypress на элементе <div>
+      });
+      $( "input" ).keypress(function(){ // задаем функцию при нажатии любой, кроме специальных клавиш клавиатуры на элементе
+        $( "input" ).css( "background-color", "orange" ); // задаем цвет заднего фона элемента
+      });
+    });
+        </script>
+    </head>
+    <body>
+        <div><input class="toggle-color" type="text"></div>
+</html>
+</html>
